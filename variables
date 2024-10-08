@@ -1,0 +1,23 @@
+public class MarkSheet {
+    public static void main(String[] args) {
+        String regNumber1 = "REG0001";
+        String fullName1 = "John Doe";
+        int ccs2211_1 = 78; // Specific marks for CCS 2211
+        int ccs2212_1 = 85; // Specific marks for CCS 2212
+        int ccs2213_1 = 90;
+        int ccs2214_1 = 88;
+        String regNumber2 = "REG0002";
+        String fullName2 = "Alice Smith";
+        int ccs2211_2 = 92; // Specific marks for CCS 2211
+        int ccs2212_2 = 87; // Specific marks for CCS 2212
+        int ccs2213_2 = 84;
+        int ccs2214_2 = 91;
+        // Print the score sheet in tabular format
+        System.out.println("Student Score Sheet");
+        System.out.println("---------------------------------------------");
+        System.out.println("Reg No.\t\tFull Name\tCCS 2211\tCCS 2212");
+        System.out.println("---------------------------------------------");
+        System.out.println(regNumber1 + "\t\t" + fullName1 + "\t\t" + ccs2211_1 + "\t\t" + ccs2212_1+ "\t\t" + ccs2213_1+ "\t\t" + ccs2214_1);
+        System.out.println(regNumber2 + "\t\t" + fullName2 + "\t\t" + ccs2211_2 + "\t\t" + ccs2212_2+"\t\t" + ccs2213_2+"\t\t" + ccs2214_2);
+    }
+}
