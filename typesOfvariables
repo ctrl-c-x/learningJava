@@ -1,0 +1,70 @@
+//Local Variable
+public class InvoiceExample{
+    public void calculateTotal()
+    {
+        int discount = 10;
+        //dicount is a local variable that is only accesible in the calculateTotal method
+        System.out.println("Discount:"+ discount);
+    }
+}
+
+//Instance variable
+public class Product{
+// Instance variable
+int productPrice;
+public void displayPrice()
+{
+System.out.println("Product Price: " + productPrice);
+}
+}
+
+//Static variable
+
+public class Product{
+// Static variable
+static int productCount = 0;
+public Product()
+{
+productCount++;
+}
+public static void displayCount()
+{
+System.out.println("Total Products: " + productCount);
+}
+}
+
+//Simple Intergrated Program
+// Simple Integrated Program
+public class Customer {
+    // Instance variable
+    String customerName;
+
+    // Static variable
+    static int customerCount = 0;
+
+    public Customer(String name) {
+        customerName = name;
+        customerCount++;
+    }
+
+    public void displayWelcomeMessage() {
+        // Local variable
+        String message = "Welcome, " + customerName + "!";
+        System.out.println(message);
+    }
+
+    public static void main(String[] args) {
+        // Creating customer objects
+        Customer customer1 = new Customer("Alice");
+        Customer customer2 = new Customer("Bob");
+
+        // Display welcome messages for each customer
+        customer1.displayWelcomeMessage();
+        customer2.displayWelcomeMessage();
+
+        // Display the total number of customers
+        System.out.println("Total customers: " + customerCount);
+    }
+}
+
+
